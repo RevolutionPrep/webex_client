@@ -8,12 +8,20 @@ Gem::Specification.new do |gem|
   gem.version       = WebexClient::VERSION
   gem.authors       = ["Larry Sprock"]
   gem.email         = ["larry.sprock@revolutionprep.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Webex wrapper for interacting with webex}
+  gem.summary       = %q{Webex wrapper}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+
+  gem.add_dependency 'resque'
+  gem.add_dependency 'mechanize'
+  gem.add_dependency 'nokogiri'
+
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'mocha'
+  gem.add_development_dependency 'fuubar'
 end
