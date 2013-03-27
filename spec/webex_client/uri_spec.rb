@@ -81,5 +81,14 @@ module WebexClient
       end
     end
 
+    context 'options' do
+      describe '.set_meeting_type_uri' do
+        it 'returns a url with with the correct params' do
+          expected = "#{subject.base_uri}/o.php?AT=ST&BU=" + return_url + "&SP=TC"
+          subject.set_meeting_type_uri('TC', 'http://whatever.com').should eql(expected)
+        end
+      end
+    end
+
   end
 end

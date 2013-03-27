@@ -5,7 +5,7 @@ module WebexClient
 
       def initialize
         @uri = WebexClient.base_uri.dup
-        @uri.path << 'o.php'
+        @uri.path << '/o.php'
       end
 
       def set_meeting_type_uri(type, redirect_url)
@@ -20,8 +20,12 @@ module WebexClient
       end
 
       module ClassMethods
-        def _options_uri
-          @_options_uri ||= Options.new
+        def _uri_options
+          @_uri_options ||= Options.new
+        end
+
+        def set_meeting_type_uri(*args)
+          _uri_options.send :set_meeting_type_uri, *args
         end
       end
     end
