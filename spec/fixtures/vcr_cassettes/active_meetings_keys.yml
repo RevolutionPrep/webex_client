@@ -1,0 +1,210 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://revolutionprep.webex.com/revolutionprep/p.php?AT=LI&PW=<PW>&WID=<WID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p385 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      host:
+      - revolutionprep.webex.com
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 27 Mar 2013 18:57:44 GMT
+      server:
+      - Apache-Coyote/1.1
+      pragma:
+      - No-cache
+      cache-control:
+      - no-cache
+      expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      p3p:
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
+      content-type:
+      - text/html
+      content-length:
+      - '390'
+      set-cookie:
+      - nebulab_tc=R400271209; path=/
+      - JSESSIONID=3BC419643180FC4BB7B5D86E88082AC2; Path=/
+      - CK_LanguageID_553523=1; Expires=Thu, 27-Mar-2014 18:57:44 GMT; Path=/; Secure
+      - CK_TimeZone_553523=4; Expires=Thu, 27-Mar-2014 18:57:44 GMT; Path=/; Secure
+      - CK_RegionID_553523=2; Expires=Thu, 27-Mar-2014 18:57:44 GMT; Path=/; Secure
+      - CK_AttendeeInfo=rO0ABXNyAD5jb20ud2ViZXgud2ViYXBwLmNvbW1vbi51dGlsLk1lZXRpbmdBdHRlbmRlZUluZm9F%0AeHRlcm5hbGl6YWJsZdR43RCnDwq7DAAAeHBwcHBwcHBwcHBwcHBwcHB3CP%2F%2F%2F%2F8AAAABeA%3D%3D;
+        Domain=webex.com; Expires=Thu, 27-Mar-2014 18:57:44 GMT; Path=/; Secure
+      - CK_LG_name=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
+      - CK_LG_pass=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
+      - ticket="AAABPa02h8IAABUYA0U4+QD0WknB+N0046snc/fxj8ivXVXiiEbHT700f6MABCF6gC1iWW4qO6gUCwN/R80cl2A2Ke45FqxIFwx75rK76FGDRNrnsx/t4qdPy8sPJxG44YGTRZasRCptlMTQkXo4onJ3mQwCAvG6/0D9d19SOhGs2SkWBhB4o1SBVIK19fQ59jB8PNd6zh5JhUHMb1Zk/Etgdpz/RBDvGwYI4IAf91eO6kQ9au5BVwl9KybLcw==";
+        Version=1; Domain=webex.com; Path=/; Secure
+      - ticket_timeStamp=1364410664899; Path=/; Secure
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n
+        \      <title> </title>\r\n       <meta http-equiv=\"content-type\" content=\"text/html;
+        charset=UTF-8\">\n<meta name=\"description\" content=\"172\">\r\n</head>\r\n<body>\r\n<script
+        language=\"JavaScript\">\r\nlocation.href=\"https\\x3a\\x2f\\x2frevolutionprep.webex.com\\x2fmw0307l\\x2fmywebex\\x2fdefault.do\\x3fsiteurl\\x3drevolutionprep\";\r\n</script>\r\n</body>\r\n</html>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Wed, 27 Mar 2013 18:57:44 GMT
+- request:
+    method: get
+    uri: https://revolutionprep.webex.com/revolutionprep/m.php?AT=OM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p385 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      cookie:
+      - nebulab_tc=R400271209; JSESSIONID=3BC419643180FC4BB7B5D86E88082AC2; CK_LanguageID_553523=1;
+        CK_TimeZone_553523=4; CK_RegionID_553523=2; CK_AttendeeInfo=rO0ABXNyAD5jb20ud2ViZXgud2ViYXBwLmNvbW1vbi51dGlsLk1lZXRpbmdBdHRlbmRlZUluZm9F%0AeHRlcm5hbGl6YWJsZdR43RCnDwq7DAAAeHBwcHBwcHBwcHBwcHBwcHB3CP%2F%2F%2F%2F8AAAABeA%3D%3D;
+        ticket="AAABPa02h8IAABUYA0U4+QD0WknB+N0046snc/fxj8ivXVXiiEbHT700f6MABCF6gC1iWW4qO6gUCwN/R80cl2A2Ke45FqxIFwx75rK76FGDRNrnsx/t4qdPy8sPJxG44YGTRZasRCptlMTQkXo4onJ3mQwCAvG6/0D9d19SOhGs2SkWBhB4o1SBVIK19fQ59jB8PNd6zh5JhUHMb1Zk/Etgdpz/RBDvGwYI4IAf91eO6kQ9au5BVwl9KybLcw==";
+        ticket_timeStamp=1364410664899
+      host:
+      - revolutionprep.webex.com
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 27 Mar 2013 18:57:45 GMT
+      server:
+      - Apache-Coyote/1.1
+      pragma:
+      - No-cache
+      cache-control:
+      - no-cache
+      expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      p3p:
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
+      content-type:
+      - text/html
+      content-length:
+      - '118'
+      set-cookie:
+      - nebulab_tc=R400271209; path=/
+      - ticket="AAABPa02iCsAABUYA0U4+QD0WknB+N0046snc/fxj8ivXVXiiEbHT700f6MABCF6gC1iWW4qO6gUCwN/R80cl2A2Ke45FqxIFwx75rK76FGDRNrnsx/t4qdPy8sPJxG44YGTRZasRCptlMTQkXo4onJ3mQwCAvG6/0D9d19SOhGs2SkWBhB4o1SBVIK19fQ59jB8PNd6zh5JhUHMb1Zk/Etgdpz/RBDvGwYI4IAf91eO6kQ9au5BVwl9KybLcw==";
+        Version=1; Domain=webex.com; Path=/; Secure
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: <ListOpenMeetings><Status>SUCCESS</Status><MeetingKeys>621018655;623350124;629471076;</MeetingKeys></ListOpenMeetings>
+    http_version: '1.1'
+  recorded_at: Wed, 27 Mar 2013 18:57:45 GMT
+- request:
+    method: get
+    uri: https://revolutionprep.webex.com/revolutionprep/p.php?AT=LO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p385 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      cookie:
+      - JSESSIONID=3BC419643180FC4BB7B5D86E88082AC2; CK_LanguageID_553523=1; CK_TimeZone_553523=4;
+        CK_RegionID_553523=2; CK_AttendeeInfo=rO0ABXNyAD5jb20ud2ViZXgud2ViYXBwLmNvbW1vbi51dGlsLk1lZXRpbmdBdHRlbmRlZUluZm9F%0AeHRlcm5hbGl6YWJsZdR43RCnDwq7DAAAeHBwcHBwcHBwcHBwcHBwcHB3CP%2F%2F%2F%2F8AAAABeA%3D%3D;
+        ticket_timeStamp=1364410664899; nebulab_tc=R400271209; ticket="AAABPa02iCsAABUYA0U4+QD0WknB+N0046snc/fxj8ivXVXiiEbHT700f6MABCF6gC1iWW4qO6gUCwN/R80cl2A2Ke45FqxIFwx75rK76FGDRNrnsx/t4qdPy8sPJxG44YGTRZasRCptlMTQkXo4onJ3mQwCAvG6/0D9d19SOhGs2SkWBhB4o1SBVIK19fQ59jB8PNd6zh5JhUHMb1Zk/Etgdpz/RBDvGwYI4IAf91eO6kQ9au5BVwl9KybLcw=="
+      host:
+      - revolutionprep.webex.com
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 27 Mar 2013 18:57:45 GMT
+      server:
+      - Apache-Coyote/1.1
+      pragma:
+      - No-cache
+      cache-control:
+      - no-cache
+      expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      p3p:
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
+      content-type:
+      - text/html
+      content-length:
+      - '418'
+      set-cookie:
+      - nebulab_tc=R400271209; path=/
+      - ticket="AAABPa02iWcAABUYA0U4+QD0WknB+N0046snc/fxj8ivXVXiiEbHT700f6MABCF6gC1iWW4qO6gUCwN/R80cl2A2Ke45FqxIFwx75rK76FGDRNrnsx/t4qdPy8sPJxG44YGTRZasRCptlMTQkXo4onJ3mQwCAvG6/0D9d19SOhGs2SkWBhB4o1SBVIK19fQ59jB8PNd6zh5JhUHMb1Zk/Etgdpz/RBDvGwYI4IAf91eO6kQ9au5BVwl9KybLcw==";
+        Version=1; Domain=webex.com; Path=/; Secure
+      - CK_LG_name553523=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
+      - CK_LG_pass553523=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
+      - ticket=""; Domain=webex.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/;
+        Secure
+      - ticket_timeStamp=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n
+        \      <title> </title>\r\n       <meta http-equiv=\"content-type\" content=\"text/html;
+        charset=UTF-8\">\n<meta name=\"description\" content=\"32\">\r\n</head>\r\n<body>\r\n<script
+        language=\"JavaScript\">\r\nlocation.href=\"https\\x3a\\x2f\\x2frevolutionprep.webex.com\\x2fmw0307l\\x2fmywebex\\x2fdefault.do\\x3fsiteurl\\x3drevolutionprep\\x26AT\\x3dLO\\x26ST\\x3dSUCCESS\";\r\n</script>\r\n</body>\r\n</html>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Wed, 27 Mar 2013 18:57:45 GMT
+recorded_with: VCR 2.4.0
