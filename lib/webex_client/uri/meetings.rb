@@ -23,7 +23,7 @@ module WebexClient
         }
 
         uri.query_values = query
-        uri
+        uri.to_s
       end
 
       def join_meeting_uri(meeting_id, redirect_url)
@@ -34,7 +34,7 @@ module WebexClient
         }
 
         uri.query_values = query
-        uri
+        uri.to_s
       end
 
       def student_join_meeting_uri(meeting_id, redirect_url, name, email)
@@ -48,7 +48,7 @@ module WebexClient
         }
 
         uri.query_values = query
-        uri
+        uri.to_s
       end
 
       def active_meetings_uri
@@ -61,12 +61,24 @@ module WebexClient
       end
 
       module ClassMethods
-        def _meetings_uri
-          @_meetings_uri ||= Meetings.new
+        def _uri_meetings
+          @_uri_meetings ||= Meetings.new
         end
         
+        def schedule_meeting_uri(*args)
+          _uri_meetings.send :schedule_meeting_uri, *args
+        end
+
+        def join_meeting_uri(*args)
+          _uri_meetings.send :join_meeting_uri, *args
+        end
+
+        def student_join_meeting_uri(*args)
+          _uri_meetings.send :student_join_meeting_uri, *args
+        end
+
         def active_meetings_uri
-          _meetings_uri.send :active_meetings_uri
+          _uri_meetings.send :active_meetings_uri
         end
       end
     end

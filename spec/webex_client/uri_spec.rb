@@ -46,7 +46,33 @@ module WebexClient
     end
 
     context 'meetings' do
-      describe '.schedule_meetings'
+      describe '.schedule_meeting_uri' do
+        it 'returns a url with the correct params' do
+          args = {
+            :name => 'jim',
+            :duration => '20',
+            :description => 'Awesome'
+          }
+          expected = "#{subject.base_uri}/m.php?AT=SM&BU=" + return_url + "&DU=20&IP=1&MF=apple&MN=Awesome&NT=1&PW=#{subject.meeting_password}"
+
+          subject.schedule_meeting_uri('apple', 'http://whatever.com', args).should eql(expected)
+        end
+      end
+
+      describe '.join_meeting_uri' do
+        it 'returns a url with with the correct params' do
+          expected = "#{subject.base_uri}/m.php?AT=HM&BU=" + return_url + "&MK=1234567"
+          subject.join_meeting_uri('1234567', 'http://whatever.com').should eql(expected)
+        end
+      end
+
+      describe '.student_join_meeting_uri' do
+        it 'returns a url with with the correct params' do
+          expected = "#{subject.base_uri}/m.php?AE=a%40me.com&AN=asasas&AT=JM&BU=" + return_url + "&MK=1234567&PW=#{subject.meeting_password}"
+          subject.student_join_meeting_uri('1234567', 'http://whatever.com', 'asasas', 'a@me.com').should eql(expected)
+        end
+      end
+
       describe '.active_meetings_uri' do
         it 'returns a url with with the correct params' do
           expected = "#{subject.base_uri}/m.php?AT=OM"
