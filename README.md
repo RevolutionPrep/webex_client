@@ -1,6 +1,7 @@
 # WebexClient
 
-TODO: Write a gem description
+This is a gem created to generate urls needed to interact with WebEx.
+It also parses config options for setting up webex meetings.
 
 ## Installation
 
@@ -16,14 +17,10 @@ Or install it yourself as:
 
     $ gem install webex_client
 
-## Usage
+## Running tests
 
-TODO: Write usage instructions here
+To run specs you need to run:
+  
+  $ cp spec/webex_config.example.yml spec/webex_config.yml
 
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Then edit the yml file with valid webex credentials.
