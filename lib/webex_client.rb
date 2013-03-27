@@ -16,7 +16,7 @@ module WebexClient
   end
 
   def self.active_keys
-    Nokogiri.XML(retrieve_active_key_xml).search('ListOpenMeetings/MeetingKeys').text.split(';')
+    Nokogiri.XML(retrieve_active_keys_xml).at('MeetingKeys').text.split(';')
   end
 
   def self.retrieve_active_keys_xml
