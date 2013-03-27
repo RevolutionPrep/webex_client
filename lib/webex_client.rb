@@ -4,7 +4,7 @@ require 'addressable/uri'
 
 require 'webex_client/version'
 require 'webex_client/configuration'
-require 'webex_client/launch_config'
+require 'webex_client/meeting_config'
 require 'webex_client/uri'
 
 module WebexClient
