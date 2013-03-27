@@ -18,10 +18,13 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency 'resque'
-  gem.add_dependency 'mechanize'
+  gem.add_dependency 'mechanize', '~> 2.5.1'
   gem.add_dependency 'nokogiri'
+  gem.add_dependency 'addressable'
 
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'mocha'
   gem.add_development_dependency 'fuubar'
+  gem.add_development_dependency 'vcr'
+  gem.add_development_dependency 'fakeweb'
 end
