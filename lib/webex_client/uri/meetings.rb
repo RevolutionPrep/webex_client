@@ -10,51 +10,50 @@ module WebexClient
       end
 
       def schedule_meeting_uri(meeting_config, redirect_url, meeting_info={})
-        query = {
-          'AT' => 'SM',
-          'PW' => meeting_pw,
-          'IP' => '1',
-          'NT' => '1',
-          'MN' => meeting_info[:name],
-          'DU' => meeting_info[:duration],
-          'MN' => meeting_info[:description],
-          'BU' => redirect_url,
-          'MF' => meeting_config
-        }
+        query = [
+          ['AT', 'SM'],
+          ['PW', meeting_pw],
+          ['IP', '1'],
+          ['NT', '1'],
+          ['MN', meeting_info[:description]],
+          ['DU', meeting_info[:duration]],
+          ['BU', redirect_url],
+          ['MF', meeting_config]
+        ]
 
         uri.query_values = query
         uri.to_s
       end
 
       def join_meeting_uri(meeting_id, redirect_url)
-        query = {
-          'AT' => 'HM',
-          'MK' => meeting_id,
-          'BU' => redirect_url
-        }
+        query = [
+          ['AT', 'HM'],
+          ['MK', meeting_id],
+          ['BU', redirect_url]
+        ]
 
         uri.query_values = query
         uri.to_s
       end
 
       def student_join_meeting_uri(meeting_id, redirect_url, name, email)
-        query = {
-          'AT' => 'JM',
-          'MK' => meeting_id,
-          'PW' => meeting_pw,
-          'BU' => redirect_url,
-          'AN' => name,
-          'AE' => email,
-        }
+        query = [
+          ['AT', 'JM'],
+          ['MK', meeting_id],
+          ['PW', meeting_pw],
+          ['BU', redirect_url],
+          ['AN', name],
+          ['AE', email]
+        ]
 
         uri.query_values = query
         uri.to_s
       end
 
       def active_meetings_uri
-        query = {
-          'AT' => 'OM'
-        }
+        query = [
+          ['AT', 'OM']
+        ]
 
         uri.query_values = query
         uri.to_s

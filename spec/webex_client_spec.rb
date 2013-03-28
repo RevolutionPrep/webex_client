@@ -15,7 +15,7 @@ describe WebexClient do
       VCR.use_cassette('active_meetings_keys') do
         meeting_keys = subject.active_keys
         meeting_keys.should be_a(Array)
-        meeting_keys.join(',').should match(/\d{9,20},/)
+        meeting_keys.join(',').should match(/\d{9,20},?/)
       end
     end
   end

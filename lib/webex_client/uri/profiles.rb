@@ -11,43 +11,43 @@ module WebexClient
       end
 
       def login_uri(username, password, redirect_url)
-        query = {
-          'AT' => 'LI',
-          'WID' => username,
-          'PW' => password,
-          'MU' => 'GoBack',
-          'BU' => redirect_url
-        }
+        query = [
+          ['AT', 'LI'],
+          ['WID', username],
+          ['PW', password],
+          ['MU', 'GoBack'],
+          ['BU', redirect_url]
+        ]
 
         uri.query_values = query
         uri.to_s
       end
 
       def logout_uri(redirect_url)
-        query = {
-          'AT' => 'LO',
-          'BU' => redirect_url
-        }
+        query = [
+          ['AT', 'LO'],
+          ['BU', redirect_url]
+        ]
 
         uri.query_values = query
         uri.to_s
       end
 
       def admin_login_no_redirect_uri
-        query = {
-          'AT' => 'LI',
-          'WID' => @admin_username,
-          'PW' => @admin_password
-        }
+        query = [
+          ['AT', 'LI'],
+          ['WID', @admin_username],
+          ['PW', @admin_password]
+        ]
 
         uri.query_values = query
         uri.to_s
       end
 
       def logout_no_redirect_uri
-        query = {
-          'AT' => 'LO'
-        }
+        query = [
+          ['AT', 'LO']
+        ]
 
         uri.query_values = query
         uri.to_s

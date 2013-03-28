@@ -4,7 +4,8 @@ require 'cgi'
 module WebexClient
   describe URI do
     subject { WebexClient }
-    let(:return_url) { CGI.escape("http://whatever.com") }
+    let(:return_url) { "http://whatever.com" }
+    let(:return_url_escaped) { CGI.escape(return_url) }
 
     before do
       subject.configure do |c|
@@ -18,21 +19,21 @@ module WebexClient
     context 'profiles' do
       describe '.login_url' do
         it 'returns a url with correct params' do
-          expected = "#{subject.base_uri}/p.php?AT=LI&BU=" + return_url + "&MU=GoBack&PW=important&WID=jimmy"
-          subject.login_uri('jimmy', 'important', 'http://whatever.com').should eql(expected) 
+          expected = "#{subject.base_uri}/p.php?AT=LI&WID=jimmy&PW=important&MU=GoBack&BU=#{return_url_escaped}"
+          subject.login_uri('jimmy', 'important', return_url).should eql(expected) 
         end
       end
 
       describe '.logout_uri' do
         it 'returns a url with with the correct params' do
-          expected = "#{subject.base_uri}/p.php?AT=LO&BU=" + return_url
-          subject.logout_uri('http://whatever.com').should eql(expected)
+          expected = "#{subject.base_uri}/p.php?AT=LO&BU=#{return_url_escaped}"
+          subject.logout_uri(return_url).should eql(expected)
         end
       end
 
       describe '.admin_login_no_redirect_uri' do
         it 'returns a url with with the correct params' do
-          expected = "#{subject.base_uri}/p.php?AT=LI&PW=#{subject.admin_password}&WID=#{subject.admin_username}"
+          expected = "#{subject.base_uri}/p.php?AT=LI&WID=#{subject.admin_username}&PW=#{subject.admin_password}"
           subject.admin_login_no_redirect_uri.should eql(expected)
         end
       end
@@ -49,27 +50,26 @@ module WebexClient
       describe '.schedule_meeting_uri' do
         it 'returns a url with the correct params' do
           args = {
-            :name => 'jim',
             :duration => '20',
             :description => 'Awesome'
           }
-          expected = "#{subject.base_uri}/m.php?AT=SM&BU=" + return_url + "&DU=20&IP=1&MF=apple&MN=Awesome&NT=1&PW=#{subject.meeting_password}"
+          expected = "#{subject.base_uri}/m.php?AT=SM&PW=#{subject.meeting_password}&IP=1&NT=1&MN=Awesome&DU=20&BU=#{return_url_escaped}&MF=apple"
 
-          subject.schedule_meeting_uri('apple', 'http://whatever.com', args).should eql(expected)
+          subject.schedule_meeting_uri('apple', return_url, args).should eql(expected)
         end
       end
 
       describe '.join_meeting_uri' do
         it 'returns a url with with the correct params' do
-          expected = "#{subject.base_uri}/m.php?AT=HM&BU=" + return_url + "&MK=1234567"
-          subject.join_meeting_uri('1234567', 'http://whatever.com').should eql(expected)
+          expected = "#{subject.base_uri}/m.php?AT=HM&MK=1234567&BU=#{return_url_escaped}"
+          subject.join_meeting_uri('1234567', return_url).should eql(expected)
         end
       end
 
       describe '.student_join_meeting_uri' do
         it 'returns a url with with the correct params' do
-          expected = "#{subject.base_uri}/m.php?AE=a%40me.com&AN=asasas&AT=JM&BU=" + return_url + "&MK=1234567&PW=#{subject.meeting_password}"
-          subject.student_join_meeting_uri('1234567', 'http://whatever.com', 'asasas', 'a@me.com').should eql(expected)
+          expected = "#{subject.base_uri}/m.php?AT=JM&MK=1234567&PW=#{subject.meeting_password}&BU=#{return_url_escaped}&AN=asasas&AE=#{CGI.escape('a@me.com')}"
+          subject.student_join_meeting_uri('1234567', return_url, 'asasas', 'a@me.com').should eql(expected)
         end
       end
 
@@ -84,8 +84,8 @@ module WebexClient
     context 'options' do
       describe '.set_meeting_type_uri' do
         it 'returns a url with with the correct params' do
-          expected = "#{subject.base_uri}/o.php?AT=ST&BU=" + return_url + "&SP=TC"
-          subject.set_meeting_type_uri('TC', 'http://whatever.com').should eql(expected)
+          expected = "#{subject.base_uri}/o.php?AT=ST&SP=TC&BU=#{return_url_escaped}"
+          subject.set_meeting_type_uri('TC', return_url).should eql(expected)
         end
       end
     end

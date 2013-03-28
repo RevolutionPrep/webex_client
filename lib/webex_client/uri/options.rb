@@ -9,11 +9,11 @@ module WebexClient
       end
 
       def set_meeting_type_uri(type, redirect_url)
-        query = {
-          'AT' => 'ST',
-          'SP' => type,
-          'BU' => redirect_url
-        }
+        query = [
+          ['AT', 'ST'],
+          ['SP', type],
+          ['BU', redirect_url]
+        ]
 
         uri.query_values = query
         uri.to_s
