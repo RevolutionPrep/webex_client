@@ -21,7 +21,6 @@ module WebexClient
 
   def self.retrieve_active_keys_xml
     agent = Mechanize.new
-    agent.max_history = 5
     agent.get(admin_login_no_redirect_uri)
     page = agent.get(active_meetings_uri)
     agent.get(logout_no_redirect_uri)
