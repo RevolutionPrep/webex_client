@@ -17,8 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_dependency 'resque'
-  gem.add_dependency 'mechanize', '~> 2.5.1'
+  gem.add_dependency 'mechanize'
   gem.add_dependency 'nokogiri'
   gem.add_dependency 'addressable'
 
