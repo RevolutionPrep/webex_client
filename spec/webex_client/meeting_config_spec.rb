@@ -15,7 +15,7 @@ module WebexClient
       subject { MeetingConfig.new(:chat => false) }
       
       it 'spits out correct params' do
-        subject.to_param.should == "111001010101111011011110".to_i(2).to_s
+        subject.to_param.should eql("111001010101111011011110".to_i(2).to_s)
       end
     end
 
