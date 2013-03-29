@@ -55,5 +55,17 @@ module WebexClient
         subject.admin_username.should eql('jim_jam')
       end
     end
+
+    describe '.meeting_type' do
+      before do
+        subject.configure do |c|
+          c.meeting_type 'TC'
+        end
+      end
+
+      it 'returns a meeting type' do
+        subject.meeting_type.should eql('TC')
+      end
+    end
   end
 end

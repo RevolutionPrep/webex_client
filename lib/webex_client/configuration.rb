@@ -26,6 +26,10 @@ module WebexClient
         @admin_username = username
       end
 
+      def meeting_type(type=nil)
+        return @meeting_type if @meeting_type
+        @meeting_type = type
+      end
     end
   end
 end
