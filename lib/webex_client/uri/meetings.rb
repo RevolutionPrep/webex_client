@@ -1,12 +1,13 @@
 module WebexClient
   module URI
     class Meetings
-      attr_reader :uri, :meeting_pw
+      attr_reader :uri, :meeting_pw, :meeting_type
 
       def initialize
         @uri = WebexClient.base_uri.dup
         @uri.path << '/m.php'
         @meeting_pw = WebexClient.meeting_password
+        @meeting_type = WebexClient.meeting_type
       end
 
       def schedule_meeting_uri(meeting_config, redirect_url, meeting_info={})
@@ -52,7 +53,8 @@ module WebexClient
 
       def active_meetings_uri
         query = [
-          ['AT', 'OM']
+          ['AT', 'OM'],
+          ['servicename', meeting_type]
         ]
 
         uri.query_values = query

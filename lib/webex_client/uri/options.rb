@@ -1,17 +1,18 @@
 module WebexClient
   module URI
     class Options
-      attr_reader :uri
+      attr_reader :uri, :meeting_type
 
       def initialize
         @uri = WebexClient.base_uri.dup
         @uri.path << '/o.php'
+        @meeting_type = WebexClient.meeting_type
       end
 
-      def set_meeting_type_uri(type, redirect_url)
+      def set_meeting_type_uri(redirect_url)
         query = [
           ['AT', 'ST'],
-          ['SP', type],
+          ['SP', meeting_type],
           ['BU', redirect_url]
         ]
 

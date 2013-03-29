@@ -11,6 +11,7 @@ module WebexClient
       subject.configure do |c|
         c.base_uri WEBEX_CONFIG['BASE_URL']
         c.meeting_password WEBEX_CONFIG['MEETING_PASSWORD']
+        c.meeting_type WEBEX_CONFIG['MEETING_TYPE']
         c.admin_password WEBEX_CONFIG['ADMIN_PASSWORD']
         c.admin_username WEBEX_CONFIG['ADMIN_USERNAME']
       end
@@ -75,7 +76,7 @@ module WebexClient
 
       describe '.active_meetings_uri' do
         it 'returns a url with with the correct params' do
-          expected = "#{subject.base_uri}/m.php?AT=OM"
+          expected = "#{subject.base_uri}/m.php?AT=OM&servicename=#{subject.meeting_type}"
           subject.active_meetings_uri.should eql(expected)
         end
       end
@@ -85,7 +86,7 @@ module WebexClient
       describe '.set_meeting_type_uri' do
         it 'returns a url with with the correct params' do
           expected = "#{subject.base_uri}/o.php?AT=ST&SP=TC&BU=#{return_url_escaped}"
-          subject.set_meeting_type_uri('TC', return_url).should eql(expected)
+          subject.set_meeting_type_uri(return_url).should eql(expected)
         end
       end
     end

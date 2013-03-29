@@ -29,7 +29,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Thu, 28 Mar 2013 16:01:55 GMT
+      - Fri, 29 Mar 2013 21:49:50 GMT
       server:
       - Apache-Coyote/1.1
       pragma:
@@ -51,30 +51,30 @@ http_interactions:
       - '390'
       set-cookie:
       - nebulab_tc=R2740926056; path=/
-      - JSESSIONID=D8DBEF672AA03A64977A3A0DA468BF16; Path=/
-      - CK_LanguageID_553523=1; Expires=Fri, 28-Mar-2014 16:01:55 GMT; Path=/; Secure
-      - CK_TimeZone_553523=4; Expires=Fri, 28-Mar-2014 16:01:55 GMT; Path=/; Secure
-      - CK_RegionID_553523=2; Expires=Fri, 28-Mar-2014 16:01:55 GMT; Path=/; Secure
+      - JSESSIONID=49F01F0B51C6DB7E9F18A2ACA5C168EF; Path=/
+      - CK_LanguageID_553523=1; Expires=Sat, 29-Mar-2014 21:49:50 GMT; Path=/; Secure
+      - CK_TimeZone_553523=4; Expires=Sat, 29-Mar-2014 21:49:50 GMT; Path=/; Secure
+      - CK_RegionID_553523=2; Expires=Sat, 29-Mar-2014 21:49:50 GMT; Path=/; Secure
       - CK_AttendeeInfo=rO0ABXNyAD5jb20ud2ViZXgud2ViYXBwLmNvbW1vbi51dGlsLk1lZXRpbmdBdHRlbmRlZUluZm9F%0AeHRlcm5hbGl6YWJsZdR43RCnDwq7DAAAeHBwcHBwcHBwcHBwcHBwcHB3CP%2F%2F%2F%2F8AAAABeA%3D%3D;
-        Domain=webex.com; Expires=Fri, 28-Mar-2014 16:01:55 GMT; Path=/; Secure
+        Domain=webex.com; Expires=Sat, 29-Mar-2014 21:49:50 GMT; Path=/; Secure
       - CK_LG_name=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
       - CK_LG_pass=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
-      - ticket="AAABPbG77IQAABUYA0UBn9n3nkmpMq2WYXdMcX/yF3SAAlL7URISzYC1vQ493n0rpQasDC4MjvgMEfd8OEsFU/MZCY6YjztA72/sCL09LvW9WEjuq0IqMR2JkvrEpGhnjfNcFGV7hkBvnth5JtOcQ1jSOH2wPTORj4N5oogaZIXzGbex0PoARaox31xyb9icSaGjuKVBGB6stUz94ItYUv2JBY6rtQzwCxb6a4UYW18UNQkHtoNXizgjMREuPA==";
+      - ticket="AAABPbggzbcAABUYA0XIRQua0Un9D9N0vKzxSo4L7LBO2QGOraEjjM5ZK6ame5itgs7Xp30yDcH2ZyIkbspwLqtcJaL4JuH2Vhf6wmgBjDJ1YgvdDW9Jb3E0NpI961KcqsUnkmgQUYitGaskq87aqEGjALcxKwLfNhFediPFlS54znozTAz9a4LxSE2mRwvo9bT9DSTJYXU/HrJiSE+hK9DvHE7qrNe/yXkoXyTdX7Dn1XiIbmU1uqOLXluKBg==";
         Version=1; Domain=webex.com; Path=/; Secure
-      - ticket_timeStamp=1364486515845; Path=/; Secure
+      - ticket_timeStamp=1364593790392; Path=/; Secure
       connection:
       - close
     body:
       encoding: US-ASCII
       string: ! "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n
         \      <title> </title>\r\n       <meta http-equiv=\"content-type\" content=\"text/html;
-        charset=UTF-8\">\n<meta name=\"description\" content=\"213\">\r\n</head>\r\n<body>\r\n<script
+        charset=UTF-8\">\n<meta name=\"description\" content=\"181\">\r\n</head>\r\n<body>\r\n<script
         language=\"JavaScript\">\r\nlocation.href=\"https\\x3a\\x2f\\x2frevolutionprep.webex.com\\x2fmw0307l\\x2fmywebex\\x2fdefault.do\\x3fsiteurl\\x3drevolutionprep\";\r\n</script>\r\n</body>\r\n</html>\r\n\r\n\r\n"
     http_version: '1.1'
-  recorded_at: Thu, 28 Mar 2013 16:01:55 GMT
+  recorded_at: Fri, 29 Mar 2013 21:49:50 GMT
 - request:
     method: get
-    uri: https://revolutionprep.webex.com/revolutionprep/m.php?AT=OM
+    uri: https://revolutionprep.webex.com/revolutionprep/m.php?AT=OM&servicename=TC
     body:
       encoding: US-ASCII
       string: ''
@@ -90,10 +90,10 @@ http_interactions:
       accept-language:
       - en-us,en;q=0.5
       cookie:
-      - nebulab_tc=R2740926056; JSESSIONID=D8DBEF672AA03A64977A3A0DA468BF16; CK_LanguageID_553523=1;
+      - nebulab_tc=R2740926056; JSESSIONID=49F01F0B51C6DB7E9F18A2ACA5C168EF; CK_LanguageID_553523=1;
         CK_TimeZone_553523=4; CK_RegionID_553523=2; CK_AttendeeInfo=rO0ABXNyAD5jb20ud2ViZXgud2ViYXBwLmNvbW1vbi51dGlsLk1lZXRpbmdBdHRlbmRlZUluZm9F%0AeHRlcm5hbGl6YWJsZdR43RCnDwq7DAAAeHBwcHBwcHBwcHBwcHBwcHB3CP%2F%2F%2F%2F8AAAABeA%3D%3D;
-        ticket="AAABPbG77IQAABUYA0UBn9n3nkmpMq2WYXdMcX/yF3SAAlL7URISzYC1vQ493n0rpQasDC4MjvgMEfd8OEsFU/MZCY6YjztA72/sCL09LvW9WEjuq0IqMR2JkvrEpGhnjfNcFGV7hkBvnth5JtOcQ1jSOH2wPTORj4N5oogaZIXzGbex0PoARaox31xyb9icSaGjuKVBGB6stUz94ItYUv2JBY6rtQzwCxb6a4UYW18UNQkHtoNXizgjMREuPA==";
-        ticket_timeStamp=1364486515845
+        ticket="AAABPbggzbcAABUYA0XIRQua0Un9D9N0vKzxSo4L7LBO2QGOraEjjM5ZK6ame5itgs7Xp30yDcH2ZyIkbspwLqtcJaL4JuH2Vhf6wmgBjDJ1YgvdDW9Jb3E0NpI961KcqsUnkmgQUYitGaskq87aqEGjALcxKwLfNhFediPFlS54znozTAz9a4LxSE2mRwvo9bT9DSTJYXU/HrJiSE+hK9DvHE7qrNe/yXkoXyTdX7Dn1XiIbmU1uqOLXluKBg==";
+        ticket_timeStamp=1364593790392
       host:
       - revolutionprep.webex.com
       connection:
@@ -106,7 +106,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Thu, 28 Mar 2013 16:01:55 GMT
+      - Fri, 29 Mar 2013 21:49:50 GMT
       server:
       - Apache-Coyote/1.1
       pragma:
@@ -120,21 +120,23 @@ http_interactions:
         DEM STA", policyref="/w3c/p3p.xml"
       - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
         DEM STA", policyref="/w3c/p3p.xml"
+      - CP="CAO DSP COR CURo ADMo DEVo TAIo CONo OUR BUS IND PHY ONL UNI PUR COM NAV
+        DEM STA", policyref="/w3c/p3p.xml"
       content-type:
       - text/html
       content-length:
-      - '98'
+      - '106'
       set-cookie:
       - nebulab_tc=R2740926056; path=/
-      - ticket="AAABPbG77PMAABUYA0UBn9n3nkmpMq2WYXdMcX/yF3SAAlL7URISzYC1vQ493n0rpQasDC4MjvgMEfd8OEsFU/MZCY6YjztA72/sCL09LvW9WEjuq0IqMR2JkvrEpGhnjfNcFGV7hkBvnth5JtOcQ1jSOH2wPTORj4N5oogaZIXzGbex0PoARaox31xyb9icSaGjuKVBGB6stUz94ItYUv2JBY6rtQzwCxb6a4UYW18UNQkHtoNXizgjMREuPA==";
+      - ticket="AAABPbggziYAABUYA0XIRQua0Un9D9N0vKzxSo4L7LBO2QGOraEjjM5ZK6ame5itgs7Xp30yDcH2ZyIkbspwLqtcJaL4JuH2Vhf6wmgBjDJ1YgvdDW9Jb3E0NpI961KcqsUnkmgQUYitGaskq87aqEGjALcxKwLfNhFediPFlS54znozTAz9a4LxSE2mRwvo9bT9DSTJYXU/HrJiSE+hK9DvHE7qrNe/yXkoXyTdX7Dn1XiIbmU1uqOLXluKBg==";
         Version=1; Domain=webex.com; Path=/; Secure
       connection:
       - close
     body:
       encoding: US-ASCII
-      string: <ListOpenMeetings><Status>SUCCESS</Status><MeetingKeys>627581517;</MeetingKeys></ListOpenMeetings>
+      string: ! "\r\n\r\n\r\n<ListOpenMeetings><Status>SUCCESS</Status><MeetingKeys>620963750;</MeetingKeys></ListOpenMeetings>\r\n"
     http_version: '1.1'
-  recorded_at: Thu, 28 Mar 2013 16:01:56 GMT
+  recorded_at: Fri, 29 Mar 2013 21:49:50 GMT
 - request:
     method: get
     uri: https://revolutionprep.webex.com/revolutionprep/p.php?AT=LO
@@ -153,9 +155,9 @@ http_interactions:
       accept-language:
       - en-us,en;q=0.5
       cookie:
-      - JSESSIONID=D8DBEF672AA03A64977A3A0DA468BF16; CK_LanguageID_553523=1; CK_TimeZone_553523=4;
+      - JSESSIONID=49F01F0B51C6DB7E9F18A2ACA5C168EF; CK_LanguageID_553523=1; CK_TimeZone_553523=4;
         CK_RegionID_553523=2; CK_AttendeeInfo=rO0ABXNyAD5jb20ud2ViZXgud2ViYXBwLmNvbW1vbi51dGlsLk1lZXRpbmdBdHRlbmRlZUluZm9F%0AeHRlcm5hbGl6YWJsZdR43RCnDwq7DAAAeHBwcHBwcHBwcHBwcHBwcHB3CP%2F%2F%2F%2F8AAAABeA%3D%3D;
-        ticket_timeStamp=1364486515845; nebulab_tc=R2740926056; ticket="AAABPbG77PMAABUYA0UBn9n3nkmpMq2WYXdMcX/yF3SAAlL7URISzYC1vQ493n0rpQasDC4MjvgMEfd8OEsFU/MZCY6YjztA72/sCL09LvW9WEjuq0IqMR2JkvrEpGhnjfNcFGV7hkBvnth5JtOcQ1jSOH2wPTORj4N5oogaZIXzGbex0PoARaox31xyb9icSaGjuKVBGB6stUz94ItYUv2JBY6rtQzwCxb6a4UYW18UNQkHtoNXizgjMREuPA=="
+        ticket_timeStamp=1364593790392; nebulab_tc=R2740926056; ticket="AAABPbggziYAABUYA0XIRQua0Un9D9N0vKzxSo4L7LBO2QGOraEjjM5ZK6ame5itgs7Xp30yDcH2ZyIkbspwLqtcJaL4JuH2Vhf6wmgBjDJ1YgvdDW9Jb3E0NpI961KcqsUnkmgQUYitGaskq87aqEGjALcxKwLfNhFediPFlS54znozTAz9a4LxSE2mRwvo9bT9DSTJYXU/HrJiSE+hK9DvHE7qrNe/yXkoXyTdX7Dn1XiIbmU1uqOLXluKBg=="
       host:
       - revolutionprep.webex.com
       connection:
@@ -168,7 +170,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Thu, 28 Mar 2013 16:01:55 GMT
+      - Fri, 29 Mar 2013 21:49:50 GMT
       server:
       - Apache-Coyote/1.1
       pragma:
@@ -190,7 +192,7 @@ http_interactions:
       - '418'
       set-cookie:
       - nebulab_tc=R2740926056; path=/
-      - ticket="AAABPbG77Z8AABUYA0UBn9n3nkmpMq2WYXdMcX/yF3SAAlL7URISzYC1vQ493n0rpQasDC4MjvgMEfd8OEsFU/MZCY6YjztA72/sCL09LvW9WEjuq0IqMR2JkvrEpGhnjfNcFGV7hkBvnth5JtOcQ1jSOH2wPTORj4N5oogaZIXzGbex0PoARaox31xyb9icSaGjuKVBGB6stUz94ItYUv2JBY6rtQzwCxb6a4UYW18UNQkHtoNXizgjMREuPA==";
+      - ticket="AAABPbggzpoAABUYA0XIRQua0Un9D9N0vKzxSo4L7LBO2QGOraEjjM5ZK6ame5itgs7Xp30yDcH2ZyIkbspwLqtcJaL4JuH2Vhf6wmgBjDJ1YgvdDW9Jb3E0NpI961KcqsUnkmgQUYitGaskq87aqEGjALcxKwLfNhFediPFlS54znozTAz9a4LxSE2mRwvo9bT9DSTJYXU/HrJiSE+hK9DvHE7qrNe/yXkoXyTdX7Dn1XiIbmU1uqOLXluKBg==";
         Version=1; Domain=webex.com; Path=/; Secure
       - CK_LG_name553523=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
       - CK_LG_pass553523=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
@@ -203,8 +205,8 @@ http_interactions:
       encoding: US-ASCII
       string: ! "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n
         \      <title> </title>\r\n       <meta http-equiv=\"content-type\" content=\"text/html;
-        charset=UTF-8\">\n<meta name=\"description\" content=\"36\">\r\n</head>\r\n<body>\r\n<script
+        charset=UTF-8\">\n<meta name=\"description\" content=\"18\">\r\n</head>\r\n<body>\r\n<script
         language=\"JavaScript\">\r\nlocation.href=\"https\\x3a\\x2f\\x2frevolutionprep.webex.com\\x2fmw0307l\\x2fmywebex\\x2fdefault.do\\x3fsiteurl\\x3drevolutionprep\\x26AT\\x3dLO\\x26ST\\x3dSUCCESS\";\r\n</script>\r\n</body>\r\n</html>\r\n\r\n\r\n"
     http_version: '1.1'
-  recorded_at: Thu, 28 Mar 2013 16:01:56 GMT
+  recorded_at: Fri, 29 Mar 2013 21:49:50 GMT
 recorded_with: VCR 2.4.0
