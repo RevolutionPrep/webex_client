@@ -21,7 +21,8 @@ module WebexClient
 
   def self.retrieve_active_keys_xml
     agent = Mechanize.new
-    agent.get(admin_login_no_redirect_uri)
+    uri = URI(admin_login_no_redirect_uri)
+    agent.post("#{uri.scheme}://#{uri.host}#{uri.path}", Rack::Utils.parse_nested_query(uri.query))
     page = agent.get(active_meetings_uri)
     agent.get(logout_no_redirect_uri)
     page.body
